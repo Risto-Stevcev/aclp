@@ -6,7 +6,11 @@
 /* Note here that only the second goal (G2) succeeds.               */
 /* **************************************************************** */
 
-:- dynamic flies/1,abnormal/1,bird/1,penguin/1,eagle/1.
+:- dynamic(flies/1).
+:- dynamic(abnormal/1).
+:- dynamic(bird/1).
+:- dynamic(penguin/1).
+:- dynamic(eagle/1).
 
 
 flies(X) :- bird(X), not(abnormal(X)).
@@ -33,7 +37,13 @@ abducible_predicate(none).
 /* G2: demo([not(flies(sam))],[],FinalExp).                         */
 /* **************************************************************** */
 
-:- dynamic flies/1,abnormal/1,light/1,heavy/1,bird/1,penguin/1,eagle/1.
+:- dynamic(flies/1).
+:- dynamic(abnormal/1).
+:- dynamic(light/1).
+:- dynamic(heavy/1).
+:- dynamic(bird/1).
+:- dynamic(penguin/1).
+:- dynamic(eagle/1).
 
 
 flies(X) :- bird(X), not(abnormal(X)).
@@ -72,7 +82,13 @@ abducible_predicate(none).
 /* Note also that the second goal (G2) now has two explanations.    */
 /* **************************************************************** */
 
-:- dynamic flies/1,abnormal/1,heavy/1,light/1,bird/1,penguin/1,eagle/1.
+:- dynamic(flies/1).
+:- dynamic(abnormal/1).
+:- dynamic(heavy/1).
+:- dynamic(light/1).
+:- dynamic(bird/1).
+:- dynamic(penguin/1).
+:- dynamic(eagle/1).
 
 
 flies(X) :- bird(X), not(abnormal(X)).
@@ -106,7 +122,10 @@ abducible_predicate(slim).
 /* Note that there are two alternative explanations for G2.         */
 /* **************************************************************** */
 
-:- dynamic ic/0,car_doesnt_start/1,lights_go_on/1,fuel_indicator_empty/1.
+:- dynamic(ic/0).
+:- dynamic(car_doesnt_start/1).
+:- dynamic(lights_go_on/1).
+:- dynamic(fuel_indicator_empty/1).
 
 
 car_doesnt_start(X) :- battery_flat(X).

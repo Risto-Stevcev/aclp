@@ -6,7 +6,7 @@ A single-file abduction system for prolog. Doesn't need/use CHR for abduction.
 
 ## Examples
 
-Tested with SWI and Trealla:
+Tested with SWI, Trealla, Scryer, and Tau:
 
 ```
 ?- [alp_int].

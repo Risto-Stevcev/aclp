@@ -1,4 +1,8 @@
-:- dynamic ic/0, rich/1, professor/1, has/2, happy/1.
+:- dynamic(ic/0).
+:- dynamic(rich/1).
+:- dynamic(professor/1).
+:- dynamic(has/2).
+:- dynamic(happy/1).
 
 /* Abducibles */
 abducible_predicate(rich).
